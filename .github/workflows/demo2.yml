@@ -1,0 +1,16 @@
+name: Execute Python Script
+
+on: [push]
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run Python Script
+      run: |
+        # Your Python script here
+        echo "Hello, World!"
